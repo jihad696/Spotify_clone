@@ -1,3 +1,4 @@
+
 .card {
     background-color: var(--color-card);
     padding: var(--space-lg);
@@ -30,3 +31,165 @@
 .button:hover {
     transform: scale(1.05);
 }
+
+
+/* navbar  */
+
+.navbar
+{
+    background-color: var(--color-black);
+    font-weight: bold;
+    color: rgb(201, 200, 200) ;
+
+}
+
+
+
+
+
+
+.home_icon
+{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    fill:#1ed760
+    
+}
+
+.home_icon:hover
+{
+    cursor: point;
+}
+
+.search_icon svg {
+    position: absolute;
+    margin-left: 12px;
+    color: rgb(255, 255, 255);
+    transform: scale(0.5);
+    width: 58px;
+    height: 65px;
+    top: -9px;
+    left: 36px;
+}
+
+.search_icon:hover
+{
+    cursor: pointer;
+}
+
+input.search_input
+{
+    background-color: var(--color-card);
+    padding: 15px 15px 15px 69px;
+    border-radius: 50px;
+    width: 520px;
+    border: none;
+    
+}
+
+
+
+.install
+{
+    font-size: bold;
+    color: rgb(201, 200, 200) ;
+
+}
+.install_icon
+{
+    width: 18px;
+    height: 18px;
+    margin-left: 2px;
+    font-size: bold;
+    font-size: bold;
+    color: rgb(201, 200, 200) ;
+
+
+
+}
+
+.links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(201, 200, 200);
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.links li a:hover {
+    transform: scale(1.05);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+
+.links::after {
+    content: "";
+    background-color: transparent;
+    padding: 10px;
+    position: absolute;
+    right: -18px;
+    border-right: rgb(166, 166, 166) solid 2px;
+    height: 27px;
+}
+
+
+.auth
+{
+    font-size: bold;
+    color: rgb(201, 200, 200) ;
+    text-align: center;
+}
+
+.log_in
+{
+    padding: 15px;
+    width: 110px;
+}
+
+.search_input::placeholder
+{
+    color: rgb(201, 200, 200) ;
+    font-size: 16px;
+
+}
+
+.material-symbols-outlined{
+    color: #1ed760;
+    font-size: 26px;
+    position: absolute;
+    right: -154px;
+}
+
+.material-symbols-outlined::before {
+    content: "";
+    background-color: #ff000000;
+    padding: 10px;
+    position: absolute;
+    right: 39px;
+    border-right: rgb(166, 166, 166) solid 2px;
+    height: 35px;
+    top: -5px;
+}
+
+
+
+
+.search_input {
+    flex: 1;
+    padding: 6px 10px;
+    border: 2px solid #444;       
+    border-radius: 6px;
+    background-color: #1f1f1f;    
+    color: white;
+    transition: all 0.2s ease;   
+}
+
+.search_input:hover,
+.search_input:focus {
+    background-color: #333;       
+    border-color: #1ed760;       
+}
+

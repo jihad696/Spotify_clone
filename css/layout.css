@@ -1,3 +1,4 @@
+
 body {
     background-color: var(--color-black);
     font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
@@ -6,13 +7,117 @@ body {
 
 .layout {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
+    margin-top: -13px;
+    gap: 1px;
 }
 
 .sidebar {
-    width: 450px;
+    width: 25%;
     background-color: var(--color-dark);
     padding: var(--space-md);
+    border-radius: var(--radius-md)
+
 }
+
+.main
+{
+    background-color: var(--color-dark);
+    width:74% ;
+    margin: 5px auto;
+    
+    border-radius: var(--radius-md)
+}
+
+
+/* navbar */
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img
+{
+    width: 40px;
+    height: 40px;
+    margin: 12px;
+}
+
+.icon_searchbar
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    transform: translate(20%);
+    
+}
+
+.home_icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex: 2; */
+    margin-right: -172px;
+}
+
+
+
+.search_input
+{
+    flex: 1;
+    border: none;
+    outline: none;
+    display: flex; 
+    padding-left: 10px;
+}
+
+
+
+
+
+.links
+{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    transform: translate(-38%)
+}
+
+.install
+{
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-52%);
+}
+
+.auth
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-12%);
+}
+
+
+
+
+
 
 
