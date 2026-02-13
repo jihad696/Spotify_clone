@@ -1,0 +1,14 @@
+:root {
+    --color-black: #000;
+    --color-dark: #121212;
+    --color-card: #1f1f1f;
+    --color-white: #fff;
+    --color-green: #1ed760;
+
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+
+    --radius-md: 10px;
+    --radius-pill: 25px;
+}

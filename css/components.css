@@ -1,0 +1,32 @@
+.card {
+    background-color: var(--color-card);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+}
+
+.card_title {
+    font-weight: 400;
+    margin-bottom: var(--space-sm);
+    color: var(--color-white);
+}
+
+.card_text {
+    font-size: 0.875rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-white);
+}
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
