@@ -13,17 +13,18 @@ body {
 }
 
 .sidebar {
-    width: 25%;
+    width: 21%;
     background-color: var(--color-dark);
     padding: var(--space-md);
-    border-radius: var(--radius-md)
-
+    border-radius: var(--radius-md);
+    margin-left: 8px;
+    margin-top: 4px;
 }
 
 .main
 {
     background-color: var(--color-dark);
-    width:74% ;
+    width:77% ;
     margin: 5px auto;
     
     border-radius: var(--radius-md)
@@ -117,7 +118,53 @@ body {
 
 
 
+/* Trending */
 
+.trending {
+    margin: 15px;
+}
 
+.trending-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 14PX;
+}
 
+.section-title {
+    width: 100%;
+    margin: 26px 0;
 
+}
+
+.play-button {
+    position: absolute;
+    cursor: pointer;
+    bottom: 104px;
+    left: 116px;
+    display: none;
+    transform: translateY(15px);
+    transition: 0.2s transform ease-in-out,
+     0.2s display ease-in-out;
+}
+
+.trend-song-card {
+    width: 201px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.trend-song-card:hover {
+    background-color: #1f1f1f;
+}
+
+.trend-song-card:hover .play-button
+{
+    display: block;
+    transform: translateY(-15px);
+}
