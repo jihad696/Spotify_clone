@@ -204,7 +204,7 @@
 }
 
 
-.trending
+.trending,.popular-artists
 {
     color: var(--color-white);
 }
@@ -272,3 +272,42 @@ a
     border-left-color: var(--color-black);
 }
 
+/* poular artist card */
+
+.artist-img img
+{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+.artist-name, .artist-card p 
+{
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.artist-card p 
+{
+    color: #b3b3b3;
+}
+
+.artist-card
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.popular-artists-grid
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.popular-artists-grid .artist-name:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}

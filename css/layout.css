@@ -19,6 +19,7 @@ body {
     border-radius: var(--radius-md);
     margin-left: 8px;
     margin-top: 4px;
+    height: 80vh;
 }
 
 .main
@@ -26,8 +27,13 @@ body {
     background-color: var(--color-dark);
     width:77% ;
     margin: 5px auto;
-    
-    border-radius: var(--radius-md)
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 0 10px;
+    gap: 40px;
+    height: 80vh;
 }
 
 
@@ -118,9 +124,10 @@ body {
 
 
 
+
 /* Trending */
 
-.trending {
+.trending,.popular-artists {
     margin: 15px;
 }
 
@@ -132,7 +139,7 @@ body {
 
 .section-title {
     width: 100%;
-    margin: 26px 0;
+    margin: 13px 0;
 
 }
 
