@@ -81,6 +81,11 @@
 
     <div class="layout" style="flex-wrap: wrap;">
         <aside class="sidebar" role="complementary" aria-label="Quick actions">
+            <div class="aside-head">
+                <p>Your Library</p>
+                <button>+  Create</button>
+            </div>
+
             <section class="card">
                 <h2 class="card_title">Create your first playlist</h2>
                 <p class="card_text">It's easy we'll help you.</p>
@@ -91,6 +96,40 @@
                 <h2 class="card_title">Let's find some podcasts to follow</h2>
                 <p class="card_text">We'll keep you updated on new episodes.</p>
                 <button type="button" class="button" aria-label="Browse available podcasts">Browse Podcasts</button>
+            </section>
+
+            <section class="aside-links">
+                <ul>
+                    <li><a href="#install" aria-label="Install Spotify app">Legal</a></li>
+                    <li><a href="#support" aria-label="Get support for Spotify">safety& privacy center</a></li>
+                    <li><a href="#web-player" aria-label="Open Spotify web player">privacy policy</a></li>
+                    <li><a href="#free-mobile-apps" aria-label="Download free mobile apps" class="break-line">Cookies</a></li>
+                    <li><a href="#car-factory-integration" aria-label="Learn about car factory integration">About Ads</a></li>
+                    <li><a href="#spotify-for-developers" aria-label="Visit Spotify for Developers">Accessibility</a></li>
+                </ul>
+
+                <a class="cookies">Cookies</a>
+                <button type="button" class="button english-button" aria-label="Change language">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="18" 
+                        height="18" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15 15 0 0 1 0 20"></path>
+                        <path d="M12 2a15 15 0 0 0 0 20"></path>
+                    </svg>
+                    English
+                </button>
+
             </section>
         </aside>
 
@@ -106,9 +145,9 @@
                     <div class="trending-grid">
                         <article class="trend-song-card">
                             <a href="#play-ramadan" class="card-link" aria-label="Play Ramadan Fi Masr Haga Taniah">
-                                <img src="./assets/Ramadan.jpeg" alt="Ramadan Fi Masr album cover" loading="lazy">
+                                <img src="./assets/Eljasmi.png" alt="Ramadan Fi Masr album cover" loading="lazy">
                             </a>
-                            <h3 class="trend-song-title">Ramadan Fi Masr <br> Haga Taniah</h3>
+                            <h3 class="trend-song-title">Ramadan Fi Masr Haga Taniah</h3>
                             <p class="trend-song-artist">
                                 <a href="#artist-lorem">Lorem, ipsum.</a>
                             </p>
@@ -118,11 +157,11 @@
 
                         <article class="trend-song-card">
                             <a href="#play-ramadan" class="card-link" aria-label="Play Kan 3ala 3eny (Red Bull Mazzika Salonat) by Lorem, ipsum">
-                                <img src="./assets/Ramadan.jpeg" alt="Album cover for Kan 3ala 3eny (Red Bull Mazzika Salonat)" loading="lazy">
+                                <img src="./assets/RedBull.png" alt="Album cover for Kan 3ala 3eny (Red Bull Mazzika Salonat)" loading="lazy">
                             </a>
                             <h3 class="trend-song-title">Kan 3ala 3eny (Red Bull Mazzika Salonat)</h3>
                             <p class="trend-song-artist">
-                                <a href="#artist-lorem">Lorem, ipsum.</a>
+                                <a href="#artist-lorem">Lege-Cy,Hamid</a>
                             </p>
                             <button type="button" class="play-button" aria-label="Play the song"></button>
 
@@ -130,11 +169,11 @@
 
                         <article class="trend-song-card">
                             <a href="#play-ramadan" class="card-link" aria-label="Play كله اتساوس واتكالب ( انا عندي حاسه سابعه ) by tommy">
-                                <img src="./assets/Ramadan.jpeg" alt="Album cover for كله اتساوس واتكالب ( انا عندي حاسه سابعه )" loading="lazy">
+                                <img src="./assets/sasa.webp" alt="Album cover for كله اتساوس واتكالب ( انا عندي حاسه سابعه )" loading="lazy">
                             </a>
                             <h3 class="trend-song-title" lang="ar" dir="rtl">كله اتساوس واتكالب ( انا عندي حاسه سابعه )</h3>
                             <p class="trend-song-artist">
-                                <a href="#artist-lorem" style="margin: 0 -6px; padding: 0;">tommy</a>
+                                <a href="#artist-lorem" style="margin: 0 -6px; padding: 0;">Essam Sasa</a>
                             </p>
                             <button type="button" class="play-button" aria-label="Play the song"></button>
 
@@ -144,7 +183,7 @@
                             <a href="#play-ramadan" class="card-link" aria-label="Play Ramadan Fi Masr Haja Taniah by Lorem, ipsum">
                                 <img src="./assets/Ramadan.jpeg" alt="Album cover for Ramadan Fi Masr Haja Taniah" loading="lazy">
                             </a>
-                            <h3 class="trend-song-title">Ramadan Fi Masr Haja Taniah</h3>
+                            <h3 class="trend-song-title">Ramadan Kareem</h3>
                             <p class="trend-song-artist">
                                 <a href="#artist-lorem" style="margin: 0 -6px; padding: 0;">Lorem, ipsum.</a>
                             </p>
@@ -153,12 +192,12 @@
                         </article>
 
                         <article class="trend-song-card">
-                            <a href="#play-ramadan" class="card-link" aria-label="Play مرحب شهر الصوم by Lorem, ipsum">
-                                <img src="./assets/Ramadan.jpeg" alt="Album cover for مرحب شهر الصوم" loading="lazy">
+                            <a href="#play-ramadan" class="card-link" aria-label="Play مرحب شهر الصوم by Abdel Aziz Mahmoud">
+                                <img src="./assets/mr7b.webp" alt="Album cover for مرحب شهر الصوم" loading="lazy">
                             </a>
                             <h3 class="trend-song-title">مرحب شهر الصوم</h3>
                             <p class="trend-song-artist">
-                                <a href="#artist-lorem" style="margin: 0 -6px; padding: 0;">Lorem, ipsum.</a>
+                                <a href="#artist-lorem" style="margin: 0 -6px; padding: 0;">Abdel Aziz Mahmoud</a>
                             </p>
                             <button type="button" class="play-button" aria-label="Play the song"></button>
 
@@ -166,7 +205,7 @@
 
                         <article class="trend-song-card">
                             <a href="#play-ramadan" class="card-link" aria-label="Play sneen by TUL8ET">
-                                <img src="./assets/Ramadan.jpeg" alt="Album cover for sneen" loading="lazy">
+                                <img src="./assets/TULE8T.webp" alt="Album cover for sneen" loading="lazy">
                             </a>
                             <h3 class="trend-song-title">sneen</h3>
                             <p class="trend-song-artist">
@@ -178,7 +217,7 @@
 
                         <article class="trend-song-card">
                             <a href="#play-ramadan" class="card-link" aria-label="Play Ramadan Gana by Muhammed Abd-elmotelb">
-                                <img src="./assets/Ramadan.jpeg" alt="Album cover for Ramadan Gana" loading="lazy">
+                                <img src="./assets/RamadanGana.jpeg" alt="Album cover for Ramadan Gana" loading="lazy">
                             </a>
                             <h3 class="trend-song-title">Ramadan Gana</h3>
                             <p class="trend-song-artist">
@@ -201,7 +240,7 @@
                 <div class="popular-artists-grid">
                     <article class="artist-card">
                         <a href="#artist-profile" class="artist-img" aria-label="Open Amr Diab profile">
-                            <img src="./assets/Ramadan.jpeg" alt="Amr Diab profile picture">
+                            <img src="./assets/Amr.jpg" alt="Amr Diab profile picture">
                         </a>
                         <h3 class="artist-name">Amr Diab</h3>
                         <p>Artist</p>
@@ -209,7 +248,7 @@
 
                     <article class="artist-card">
                         <a href="#artist-profile" class="artist-img" aria-label="Open Eslam Kabonga profile">
-                            <img src="./assets/Ramadan.jpeg" alt="Eslam Kabonga profile picture">
+                            <img src="./assets/EslamKabonga.webp" alt="Eslam Kabonga profile picture">
                         </a>
                         <h3 class="artist-name">Eslam Kabonga</h3>
                         <p>Artist</p>
@@ -217,7 +256,7 @@
 
                     <article class="artist-card">
                         <a href="#artist-profile" class="artist-img" aria-label="Open Ramy Sabry profile">
-                            <img src="./assets/Ramadan.jpeg" alt="Ramy Sabry profile picture">
+                            <img src="./assets/Ramy.webp" alt="Ramy Sabry profile picture">
                         </a>
                         <h3 class="artist-name">Ramy Sabry</h3>
                         <p>Artist</p>
@@ -225,7 +264,7 @@
 
                     <article class="artist-card">
                         <a href="#artist-profile" class="artist-img" aria-label="Open Nicki Minaj profile">
-                            <img src="./assets/Ramadan.jpeg" alt="Nicki Minaj profile picture">
+                            <img src="./assets/Niki.jpeg" alt="Nicki Minaj profile picture">
                         </a>
                         <h3 class="artist-name">Nicki Minaj</h3>
                         <p>Artist</p>
@@ -233,7 +272,7 @@
 
                     <article class="artist-card">
                         <a href="#artist-profile" class="artist-img" aria-label="Open Essam Sasa profile">
-                            <img src="./assets/Ramadan.jpeg" alt="Essam Sasa profile picture">
+                            <img src="./assets/Essam.jpeg" alt="Essam Sasa profile picture">
                         </a>
                         <h3 class="artist-name">Essam Sasa</h3>
                         <p>Artist</p>
@@ -241,7 +280,7 @@
 
                     <article class="artist-card">
                         <a href="#artist-profile" class="artist-img" aria-label="Open Amir Eid profile">
-                            <img src="./assets/Ramadan.jpeg" alt="Amir Eid profile picture">
+                            <img src="./assets/AmirEid.jpeg" alt="Amir Eid profile picture">
                         </a>
                         <h3 class="artist-name">Amir Eid</h3>
                         <p>Artist</p>
@@ -249,13 +288,199 @@
 
                     <article class="artist-card">
                         <a href="#artist-profile" class="artist-img" aria-label="Open Hatem Hany profile">
-                            <img src="./assets/Ramadan.jpeg" alt="Hatem Hany profile picture">
+                            <img src="./assets/HanyHatem.jpeg" alt="Hatem Hany profile picture">
                         </a>
                         <h3 class="artist-name">Hatem Hany</h3>
                         <p>Artist</p>
                     </article>
                 </div>
             </section>
+
+            <section class="popular-albums-and-singles">
+                <h2 class="section-title" id="trending-heading">Popular albums and singles</h2>
+
+                <div class="trending-grid">
+                    <article class="trend-song-card">
+                                <a href="#play-blinding-lights" class="card-link" aria-label="Play Blinding Lights by The Weeknd">
+                                    <img src="./assets/theweekend.jpeg" alt="Album cover for Blinding Lights" loading="lazy">
+                                </a>
+                                <h3 class="trend-song-title">Blinding Lights</h3>
+                                <p class="trend-song-artist">
+                                    <a href="#artist-weeknd">The Weeknd</a>
+                                </p>
+                                <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-as-it-was" class="card-link" aria-label="Play As It Was by Harry Styles">
+                            <img src="./assets/asitwas.jpeg" alt="Album cover for As It Was" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">As It Was</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-harry-styles">Harry Styles</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-girl-like-me" class="card-link" aria-label="Play Girl Like Me by Black Eyed Peas & Shakira">
+                            <img src="./assets/GirlLikeMe.jpeg" alt="Album cover for Girl Like Me" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">Girl Like Me</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-black-eyed-peas">Black Eyed Peas & Shakira</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-levitating" class="card-link" aria-label="Play Levitating by Dua Lipa">
+                            <img src="./assets/DuaLipe.jpeg" alt="Album cover for Levitating" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">Levitating</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-dua-lipa">Dua Lipa</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-snap" class="card-link" aria-label="Play Snap by Rosa Linn">
+                            <img src="./assets/snap.jpeg" alt="Album cover for Snap" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">Snap</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-rosa-linn">Rosa Linn</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-savage-love" class="card-link" aria-label="Play Savage Love by Jawsh 685 & Jason Derulo">
+                            <img src="./assets/savage.jpeg" alt="Album cover for Savage Love" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">Savage Love</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-jawsh-685">Jawsh 685 & Jason Derulo</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-dont-start-now" class="card-link" aria-label="Play Don't Start Now by Dua Lipa">
+                            <img src="./assets/DuaLipe.jpeg" alt="Album cover for Don't Start Now" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">Don't Start Now</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-dua-lipa">Dua Lipa</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                 
+
+                  
+                </div>
+            </section>
+
+            <section class="popular-albums-and-singles">
+                <h2 class="section-title" id="trending-heading">Popular audio</h2>
+
+                <div class="trending-grid">
+                    <article class="trend-song-card">
+                                <a href="#play-blinding-lights" class="card-link" aria-label="Play Blinding Lights by The Weeknd">
+                                    <img src="./assets/theweekend.jpeg" alt="Album cover for Blinding Lights" loading="lazy">
+                                </a>
+                                <h3 class="trend-song-title">Blinding Lights</h3>
+                                <p class="trend-song-artist">
+                                    <a href="#artist-weeknd">The Weeknd</a>
+                                </p>
+                                <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-as-it-was" class="card-link" aria-label="Play As It Was by Harry Styles">
+                            <img src="./assets/asitwas.jpeg" alt="Album cover for As It Was" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">As It Was</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-harry-styles">Harry Styles</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-girl-like-me" class="card-link" aria-label="Play Girl Like Me by Black Eyed Peas & Shakira">
+                            <img src="./assets/GirlLikeMe.jpeg" alt="Album cover for Girl Like Me" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">Girl Like Me</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-black-eyed-peas">Black Eyed Peas & Shakira</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-levitating" class="card-link" aria-label="Play Levitating by Dua Lipa">
+                            <img src="./assets/DuaLipe.jpeg" alt="Album cover for Levitating" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">Levitating</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-dua-lipa">Dua Lipa</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-snap" class="card-link" aria-label="Play Snap by Rosa Linn">
+                            <img src="./assets/snap.jpeg" alt="Album cover for Snap" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">Snap</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-rosa-linn">Rosa Linn</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-savage-love" class="card-link" aria-label="Play Savage Love by Jawsh 685 & Jason Derulo">
+                            <img src="./assets/savage.jpeg" alt="Album cover for Savage Love" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">Savage Love</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-jawsh-685">Jawsh 685 & Jason Derulo</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                    <article class="trend-song-card">
+                        <a href="#play-dont-start-now" class="card-link" aria-label="Play Don't Start Now by Dua Lipa">
+                            <img src="./assets/DuaLipe.jpeg" alt="Album cover for Don't Start Now" loading="lazy">
+                        </a>
+                        <h3 class="trend-song-title">Don't Start Now</h3>
+                        <p class="trend-song-artist">
+                            <a href="#artist-dua-lipa">Dua Lipa</a>
+                        </p>
+                        <button type="button" class="play-button" aria-label="Play the song"></button>
+                    </article>
+
+                 
+
+                  
+                </div>
+            </section>
+
+            <hr style="color: var(--color-dark);">
+
+
+
+            <footer class="footer">
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+            </footer>
 
 
 

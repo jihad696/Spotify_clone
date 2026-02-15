@@ -1,26 +1,31 @@
 .card {
 
     background-color: var(--color-card);
-    padding: var(--space-lg);
+    padding: var(--space-md);
     border-radius: var(--radius-md);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-lg);
+    width: 103%;
+    line-height: 23px;
 }
 
 .card_title {
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: var(--space-sm);
     color: var(--color-white);
+    font-size: 16px;
 }
 
 .card_text {
     font-size: 0.875rem;
     margin-bottom: var(--space-md);
     color: var(--color-white);
+    font-size: 12px;
+    margin-left: 0px;
 }
 
 .button {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 4px 21px;
     border-radius: var(--radius-pill);
     background-color: var(--color-white);
     color: var(--color-black);
@@ -28,6 +33,7 @@
     cursor: pointer;
     transition: transform 0.2s ease;
     text-decoration: none;
+    font-size: 12px;
 }
 
 .button:hover {
@@ -204,7 +210,7 @@
 }
 
 
-.trending,.popular-artists
+.trending,.popular-artists,.popular-albums-and-singles
 {
     color: var(--color-white);
 }
@@ -266,20 +272,28 @@ a
     content: "";
     position: absolute;
     top: 50%;
-    left: 61%;
-    transform: translate(-40%, -50%);
-    border: 15px solid transparent;
-    border-left-color: var(--color-black);
+    left: 50%;
+    transform: translate(-35%, -50%);
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 12px solid var(--color-black);
 }
 
 /* poular artist card */
+
+.artist-img {
+    position: relative;
+    display: inline-block;
+}
 
 .artist-img img
 {
     border-radius: 50%;
     width: 170px;
     height: 170px;
+    display: block;
 }
+
 .artist-name, .artist-card p 
 {
     font-size: 15px;
@@ -298,7 +312,84 @@ a
     flex-wrap: nowrap;
     flex-direction: column;
     gap: 5px;
+    position: relative;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
+
+/* circular overlay on artist image (bottom-right) */
+.artist-img::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    transform: translateY(15px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out, visibility 0.2s;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+    z-index: 2;
+}
+
+/* play triangle on artist image */
+.artist-img::before {
+    content: "";
+    position: absolute;
+    bottom: 31px;
+    right: 33px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 12px solid var(--color-black);
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+    z-index: 3;
+}
+
+.artist-card:hover {
+    background-color: #1f1f1f;
+}
+
+.artist-card:hover::after,
+.card:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.artist-card:hover::before,
+.card:hover::before {
+    opacity: 1;
+}
+
+.artist-card:hover .artist-img::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.artist-card:hover .artist-img::before {
+    opacity: 1;
+}
+
+.artist-card:hover::before,
+.card:hover::before {
+    opacity: 1;
+}
+
+.artist-card:hover .artist-img::before {
+    opacity: 1;
+}
+
+.artist-card:hover::after {
+    background-color: #4cfa89;
+}
+
+
 
 .popular-artists-grid
 {
@@ -310,4 +401,51 @@ a
 {
     cursor: pointer;
     text-decoration: underline;
+}
+
+
+
+aside p
+{
+    font-weight: bold;
+    font-size: 15px;color: white;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+.aside-head button {
+    color: white;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 28px;
+    margin-bottom: 15px;
+}
+
+
+.aside-links .cookies {
+    margin-left: 0px;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.aside-links .cookies:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.english-button {
+    margin-top: 19px;
+    padding: 7px;
+    border: white 1px solid;
+    color: white;
+    background-color: transparent;
+    width: 102px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

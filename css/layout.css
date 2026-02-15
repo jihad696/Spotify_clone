@@ -1,15 +1,15 @@
-
 body {
     background-color: var(--color-black);
     font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .layout {
     display: flex;
     height: 100vh;
-    margin-top: -13px;
-    gap: 1px;
+    gap: 8px;
+    padding: 0 8px;
 }
 
 .sidebar {
@@ -17,54 +17,66 @@ body {
     background-color: var(--color-dark);
     padding: var(--space-md);
     border-radius: var(--radius-md);
-    margin-left: 8px;
-    margin-top: 4px;
-    height: 80vh;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main
-{
+.main {
     background-color: var(--color-dark);
-    width:77% ;
-    margin: 5px auto;
+    flex: 1;
     border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    padding: 0 10px;
+    padding: 10px 10px 50px 10px;
     gap: 40px;
-    height: 80vh;
+    height: 93%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-grey) var(--color-dark);
 }
 
+.main::-webkit-scrollbar {
+    width: 8px;
+}
 
-/* navbar */
+.main::-webkit-scrollbar-track {
+    background: var(--color-dark);
+    border-radius: 4px;
+}
 
-.navbar
-{
+.main::-webkit-scrollbar-thumb {
+    background: var(--color-grey);
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+    background: var(--color-green);
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo img
-{
+.logo img {
     width: 40px;
     height: 40px;
     margin: 12px;
 }
 
-.icon_searchbar
-{
+.icon_searchbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px auto;
+    margin: 0 auto;
     transform: translate(20%);
-    
 }
 
-.home_icon
-{
+.home_icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,38 +86,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex: 2; */
     margin-right: -172px;
 }
 
-
-
-.search_input
-{
+.search_input {
     flex: 1;
     border: none;
     outline: none;
-    display: flex; 
+    display: flex;
     padding-left: 10px;
 }
 
-
-
-
-
-.links
-{
-   
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     list-style: none;
-    transform: translate(-38%)
+    transform: translate(-38%);
 }
 
-.install
-{
+.install {
     display: flex;
     gap: 3px;
     justify-content: center;
@@ -113,8 +114,7 @@ body {
     transform: translate(-52%);
 }
 
-.auth
-{
+.auth {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -122,36 +122,39 @@ body {
     transform: translateX(-12%);
 }
 
-
-
-
-/* Trending */
-
-.trending,.popular-artists {
+.trending, .popular-artists, .popular-albums-and-singles {
     margin: 15px;
 }
 
 .trending-grid {
     display: flex;
     flex-wrap: nowrap;
-    gap: 14PX;
+    gap: 14px;
 }
 
 .section-title {
     width: 100%;
     margin: 13px 0;
-
 }
 
 .play-button {
     position: absolute;
     cursor: pointer;
-    bottom: 104px;
-    left: 116px;
-    display: none;
-    transform: translateY(15px);
-    transition: 0.2s transform ease-in-out,
-     0.2s display ease-in-out;
+    bottom: 12px;
+    right: 12px;
+    left: auto;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px) scale(0.95);
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out, visibility 0.2s;
 }
 
 .trend-song-card {
@@ -170,8 +173,42 @@ body {
     background-color: #1f1f1f;
 }
 
-.trend-song-card:hover .play-button
-{
+.trend-song-card:hover .play-button {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.aside-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.aside-links {
+
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: 25px;
+}
+
+
+.aside-links ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+a {
     display: block;
-    transform: translateY(-15px);
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-grey);
+}
+
+.break-line
+{
+    flex-basis: 100%;
+    height: 0;
 }
