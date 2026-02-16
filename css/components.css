@@ -110,6 +110,7 @@
     font-size: 26px;
     position: absolute;
     right: -154px;
+    top: 11px;
 }
 
 .material-symbols-outlined::before {
@@ -120,7 +121,7 @@
     right: 39px;
     border-right: 2px solid rgb(166, 166, 166);
     height: 35px;
-    top: -5px;
+    top: -6px;
 }
 
 .install {
@@ -443,6 +444,88 @@ aside p
     
 }
 
-hr{
+hr {
     opacity: 0.1;
+}
+
+/* Browse Grid Layout */
+.browse-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.browse-category-card {
+    aspect-ratio: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.browse-category-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+.browse-category-card h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+.browse-category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.browse-category-card:hover::before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Grid */
+@media (max-width: 1400px) {
+    .browse-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .browse-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 15px;
+    }
+    
+    .browse-category-card h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .browse-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .browse-category-card h2 {
+        font-size: 20px;
+    }
 }

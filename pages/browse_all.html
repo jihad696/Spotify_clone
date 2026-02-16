@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spotify Clone - Stream music and podcasts">
+    <title>Spotify Clone - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=planet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <a href="/" class="logo" aria-label="Spotify home">
+                <img src="../assets/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify logo">
+            </a>
+
+            <div class="icon_searchbar">
+                <a href="/" class="home_icon" aria-label="Home">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" role="img">
+                        <title>Home icon</title>
+                        <path d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z"/>
+                    </svg>
+                </a>
+
+                <div class="searchbar" role="search">
+                    <label for="search" class="search_icon">
+                        <span class="visually-hidden">Search</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="icon" aria-hidden="true" role="img">
+                            <title>Search icon</title>
+                            <path d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
+                        </svg>
+                    </label>
+
+                    <input 
+                        type="search" 
+                        class="search_input" 
+                        name="search_music" 
+                        id="search" 
+                        placeholder="What do you want to play?"
+                        aria-label="Search for music, podcasts, or artists"
+                        autocomplete="off"
+                    >
+                    
+                    <span class="material-symbols-outlined" aria-hidden="true" role="img">
+                        planet
+                    </span>
+                </div>
+            </div>
+
+            <ul class="links" role="list">
+                <li><a href="#premium">Premium</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+
+            <div class="hr" role="separator" aria-hidden="true"></div>
+
+            <a href="#install" class="install" aria-label="Install Spotify app">
+                <div class="install_icon" aria-hidden="true">
+                    <svg class="icon download_icon" viewBox="0 0 24 24" fill="currentColor" role="img">
+                        <title>Download icon</title>
+                        <path d="M5 20h14v-2H5v2zM12 2v12l4-4h-3V2h-2v8H8l4 4z"/>
+                    </svg>
+                </div>
+                <p>Install App</p>
+            </a>
+
+            <div class="auth">
+                <p><a href="#signup" aria-label="Sign up for Spotify">Sign up</a></p>
+                <p class="button log_in"><a href="#login" aria-label="Log in to your account">Log in</a></p>
+            </div>
+        </nav>
+    </header>
+
+    <div class="layout" style="flex-wrap: wrap;">
+        <aside class="sidebar" role="complementary" aria-label="Quick actions">
+            <div class="aside-head">
+                <p>Your Library</p>
+                <button>+  Create</button>
+            </div>
+
+            <section class="card">
+                <h2 class="card_title">Create your first playlist</h2>
+                <p class="card_text">It's easy we'll help you.</p>
+                <button type="button" class="button" aria-label="Create a new playlist">Create Playlist</button>
+            </section>
+
+            <section class="card">
+                <h2 class="card_title">Let's find some podcasts to follow</h2>
+                <p class="card_text">We'll keep you updated on new episodes.</p>
+                <button type="button" class="button" aria-label="Browse available podcasts">Browse Podcasts</button>
+            </section>
+
+            <section class="aside-links">
+                <ul>
+                    <li><a href="#install" aria-label="Install Spotify app">Legal</a></li>
+                    <li><a href="#support" aria-label="Get support for Spotify">safety& privacy center</a></li>
+                    <li><a href="#web-player" aria-label="Open Spotify web player">privacy policy</a></li>
+                    <li><a href="#free-mobile-apps" aria-label="Download free mobile apps" class="break-line">Cookies</a></li>
+                    <li><a href="#car-factory-integration" aria-label="Learn about car factory integration">About Ads</a></li>
+                    <li><a href="#spotify-for-developers" aria-label="Visit Spotify for Developers">Accessibility</a></li>
+                </ul>
+
+                <a class="cookies">Cookies</a>
+                <button type="button" class="button english-button" aria-label="Change language">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="18" 
+                        height="18" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15 15 0 0 1 0 20"></path>
+                        <path d="M12 2a15 15 0 0 0 0 20"></path>
+                    </svg>
+                    English
+                </button>
+
+            </section>
+        </aside>
+
+        <main class="main browse_main" id="main-content" role="main">
+            <!-- Main content will go here -->
+
+
+            <h2 class="browse_all_h2">Browse all</h2>
+            <div class="browse_layout">
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+                <a href="" class="browse_genre">
+                    <div class="browse_card">
+
+                        <h2>Music</h2>
+                        <img src="../assets/card_browse.jpeg" alt="" style="width: 150px; height: 150px;" class="browse_image">
+
+                    
+                    </div>
+                </a>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <footer class="footer">
+                <ul class="main-footer-list" role="list" aria-label="Company information" >
+                    <li>Company</li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#jobs">jobs</a></li>
+                    <li><a href="#for-the-record">For the record</a></li>
+                </ul>
+
+                <ul class="main-footer-list" role="list" aria-label="Company information" >
+                    <li>Communities</li>
+                    <li><a href="#about">For Artists</a></li>
+                    <li><a href="#jobs">Developers</a></li>
+                    <li><a href="#for-the-record">Advertising</a></li>
+                    <li><a href="#jobs">Investors</a></li>
+                    <li><a href="#jobs">Vendors</a></li>
+
+                </ul>
+                <ul class="main-footer-list" role="list" aria-label="Company information" >
+                    <li>Useful links</li>
+                    <li><a href="#about">Support</a></li>
+                    <li><a href="#jobs">Free Mobile App</a></li>
+                    <li><a href="#for-the-record">Popular by Country</a></li>
+                    <li><a href="#for-the-record">Import your music</a></li>
+
+                </ul>
+                <ul class="main-footer-list" role="list" aria-label="Company information" >
+                    <li>Spotify Plans</li>
+                    <li><a href="#about">Premium Individual</a></li>
+                    <li><a href="#jobs">Premium Duo</a></li>
+                    <li><a href="#for-the-record">Premium Family</a></li>
+                    <li><a href="#for-the-record">Premium Student</a></li>
+                    <li><a href="#for-the-record">Spotify Free</a></li>
+
+                </ul>
+
+                <ul class="main-footer-list-fn" role="list" aria-label="Social media links">
+                    
+                        <li><a href="#facebook" aria-label="Visit our Facebook page">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon" role="img" width="24" height="24">
+                                <title>Facebook icon</title>
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a></li>
+                        <li><a href="#instagram" aria-label="Visit our Instagram page">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon" role="img" width="24" height="24">
+                                <title>Instagram icon</title>
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.204-.012 3.584-.07 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                            </svg>
+                        </a></li>
+                        <li><a href="#x" aria-label="Visit our X page">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon" role="img" width="24" height="24">
+                                <title>X icon</title>
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.6l-5.165-6.745L5.07 21.75H1.76l7.73-8.835L1.012 2.25h6.6l4.759 6.285L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a></li>
+
+                </ul>
+
+
+
+
+               
+
+                
+
+            </footer>
+            <hr>
+            <p class="copy_right">&copy; 2026 Spotify AB</p>
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+    
+
+
+
+            
+
+
+</body>
+</html>

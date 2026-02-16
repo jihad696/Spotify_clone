@@ -1,0 +1,60 @@
+.browse_card {
+    background-color: #dc148c;
+    padding: 0 0 160px;
+    width: 320px;
+    height: 197px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    margin: 14px auto;
+
+}
+
+.browse_card>h2
+{
+    margin: 20px;
+}
+
+
+.browse_image {
+    width: 158px;
+    position: absolute;
+    height: 156px;
+    top: 26%;
+    left: 65%;
+    transform: rotate(21deg);
+}
+
+
+/* Browse Layout */
+
+.browse_layout {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(158px, 1fr));
+    gap: 5px;
+    padding: 5px;
+    /* width: 80%; */
+}
+
+
+
+h2{
+
+    color: white;
+    margin: 17px 0 22px 24px;
+}
+
+
+.browse_main
+{
+    gap: 0;
+}
+
+
+.browse_all_h2
+{
+    margin: 53px 0 0 24px;
+}
