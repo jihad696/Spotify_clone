@@ -210,19 +210,15 @@
 }
 
 
-.trending,.popular-artists,.popular-albums-and-singles
-{
+.trending,.popular-artists,.popular-albums-and-singles {
     color: var(--color-white);
 }
-.trend-song-card a
-{
+.trend-song-card a {
     text-decoration: none;
     color: #b3b3b3;
 }
 
-.card-link .trend-song-title , .trend-song-artist
-{
-
+.card-link .trend-song-title, .trend-song-artist {
     font-size: 16px;
     color: white;
     margin: 5px;
@@ -235,18 +231,8 @@
     flex-direction: column;
 }
 
-a
-{
+a {
     display: block;
-}
-
-
-.trend-song-title
-{
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 24px;
-
 }
 
 
@@ -256,10 +242,9 @@ a
     background-color: #1ed760;
     width: 50px;
     height: 50px;
- 
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.03s ease-in;
+    transition: transform 0.3s ease-in;
 }
 .play-button:hover
 {
@@ -448,4 +433,16 @@ aside p
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+
+.copy_right
+{
+    color: rgb(201, 200, 200);
+    font-size: 12px;
+    
+}
+
+hr{
+    opacity: 0.1;
 }
