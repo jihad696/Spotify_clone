@@ -45,5 +45,3 @@ python -m http.server 8000
 - Convert repeated card markup into templates or components if integrating into a framework.
 
 ---
-
-If you'd like, I can also generate a short CONTRIBUTING.md or add a simple script to serve the files locally with live reload.
