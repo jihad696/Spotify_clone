@@ -13,11 +13,9 @@
 
 }
 
-.browse_card>h2
-{
+.browse_card>h2 {
     margin: 20px;
 }
-
 
 .browse_image {
     width: 158px;
@@ -28,33 +26,24 @@
     transform: rotate(21deg);
 }
 
-
-/* Browse Layout */
-
 .browse_layout {
     display: grid;
     grid-template-columns: repeat(4, minmax(158px, 1fr));
     gap: 5px;
     padding: 5px;
-    /* width: 80%; */
 }
 
-
-
-h2{
-
+h2 {
     color: white;
     margin: 17px 0 22px 24px;
 }
 
-
-.browse_main
-{
+.browse_main {
     gap: 0;
 }
 
-
-.browse_all_h2
-{
+.browse_all_h2 {
     margin: 53px 0 0 24px;
 }
+
+/* Responsive */
